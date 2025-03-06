@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Prestamos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Gestión de Prestamos</h1>
+            
+            <form id="prestamoForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="idUsuario" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="libroId" placeholder="Libro" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="fechaInicio" placeholder="Fecha de inicio" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="fechaVencimiento" placeholder="Fecha de vencimiento" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="estado" placeholder="Estado" required>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit">Agregar Prestamo</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="list">
+                <h2>Lista de Prestamos</h2>
+                <ul id="prestamoList"></ul>
+            </div>
+
+            <div class="btn-inicio">
+                <button onclick="window.location.href='../index.html'">Volver al inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../views/prestamosView.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

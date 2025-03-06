@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estiloIndex.css">
+</head>
+<body>
+    <div class="container-index">
+        <div class="header-index">
+            <h1>Control de Biblioteca</h1>
+            <p>Seleccione una sección para comenzar</p>
+        </div>
+
+        <div class = "buttons-index">
+            <div class="button-index">
+                <button onclick="window.location.href='../views/libros.html'">Sección de libros</button>
+            </div>
+            <div class="button-index">
+                <button onclick="window.location.href='../views/prestamos.html'">Sección de prestamos</button>
+            </div>
+            <div class="button-index">
+                <button onclick="window.location.href='../views/usuarios.html'">Sección de usuarios</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+<script type="module" src="firebase-config.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Gestión de Usuarios</h1>
+            
+            <form id="usuarioForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="id" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="email" placeholder="Correo electronico" required>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit">Agregar Usuario</button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="list">
+                <h2>Lista de Usuarios</h2>
+                <ul id="usuarioList"></ul>
+            </div>
+
+            <div class="btn-inicio">
+                <button onclick="window.location.href='../index.html'">Volver al inicio</button>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="../views/usuariosView.js"></script>
+</body>
+</html>
